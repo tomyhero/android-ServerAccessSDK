@@ -8,12 +8,6 @@
   <packaging>aar</packaging>
   <dependencies>
     <dependency>
-      <groupId>com.android.support</groupId>
-      <artifactId>appcompat-v7</artifactId>
-      <version>23.2.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>com.mcxiaoke.volley</groupId>
       <artifactId>library</artifactId>
       <version>1.0.19</version>
