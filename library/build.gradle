@@ -1,4 +1,20 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+def repo = new File(rootDir, "repository")
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository url: "file://${repo.absolutePath}"
+            pom.version = '1.0.0'
+            pom.groupId = 'com.github.tomyhero'
+            pom.artifactId = 'serveraccesssdk'
+        }
+    }
+}
+
+
 
 android {
     compileSdkVersion 23
